@@ -1,0 +1,118 @@
+1. Data Structures (the “containers” of information)
+Basic
+Array / List → Contiguous memory storage; great for indexing.
+
+String → Sequence of characters, often manipulated with pattern search.
+
+Stack → LIFO (Last-In, First-Out) operations (push, pop).
+
+Queue → FIFO (First-In, First-Out) operations.
+
+Deque → Double-ended queue; fast inserts/removals from both ends.
+
+Hash Table / Hash Map / Dictionary → Key-value lookup in O(1) average time.
+
+Set → Unique elements, fast membership checks.
+
+Advanced
+Linked List (singly, doubly) → Dynamic size, good for insert/delete.
+
+Heap / Priority Queue → Fast retrieval of smallest/largest element.
+
+Tree:
+
+Binary Tree
+
+Binary Search Tree (BST)
+
+Balanced Trees: AVL Tree, Red-Black Tree
+
+Trie (Prefix Tree) → Great for string lookups/autocomplete.
+
+Graph Representations:
+
+Adjacency List
+
+Adjacency Matrix
+
+Disjoint Set / Union-Find → For connectivity problems in graphs.
+
+2. Algorithms (the “recipes” to process data)
+Sorting
+Bubble Sort (educational, not practical)
+
+Insertion Sort
+
+Selection Sort
+
+Merge Sort
+
+Quick Sort
+
+Heap Sort
+
+Counting Sort / Radix Sort (non-comparison sorts)
+
+Searching
+Linear Search
+
+Binary Search
+
+BFS (Breadth-First Search) → Shortest path in unweighted graphs.
+
+DFS (Depth-First Search) → Traversals, backtracking problems.
+
+Graph Algorithms
+Dijkstra’s Algorithm → Shortest path (weighted graphs, non-negative weights).
+
+Bellman-Ford → Shortest path (handles negative weights).
+
+Floyd–Warshall → All-pairs shortest paths.
+
+Kruskal’s Algorithm → Minimum Spanning Tree (MST).
+
+Prim’s Algorithm → Minimum Spanning Tree (MST).
+
+Topological Sort → Ordering in DAGs (Directed Acyclic Graphs).
+
+A* Search → Pathfinding with heuristics.
+
+Dynamic Programming (DP)
+Fibonacci sequence with memoization/tabulation.
+
+Knapsack Problem (0/1 and fractional).
+
+Longest Common Subsequence / Substring.
+
+Coin Change problem.
+
+Matrix Path problems.
+
+String Algorithms
+KMP (Knuth–Morris–Pratt) → Pattern search.
+
+Rabin-Karp → Rolling hash search.
+
+Z-Algorithm → String matching.
+
+Suffix Array / Suffix Tree → Advanced text processing.
+
+Other Essentials
+Greedy algorithms → e.g., interval scheduling.
+
+Divide and Conquer → e.g., merge sort, binary search.
+
+Backtracking → e.g., N-Queens, Sudoku solver.
+
+Bit Manipulation tricks → e.g., subsets generation, masks.
+
+3. Why These Matter in IT
+Software engineering → Data structures & algorithms underpin API design, backend performance, and scalability.
+
+Database systems → Indexing (B-Trees), hashing, graph storage.
+
+Networking → Graph algorithms, queues, priority scheduling.
+
+AI/ML → Graphs (neural nets), heaps (beam search), dynamic programming (sequence models).
+
+Cybersecurity → Hashing, cryptographic algorithms.

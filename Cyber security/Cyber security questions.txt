@@ -1,0 +1,69 @@
+1. Core Security Concepts
+What’s the difference between authentication and authorization?
+
+Explain CIA Triad (Confidentiality, Integrity, Availability).
+
+What are the main security principles in software design (e.g., least privilege, fail-safe defaults)?
+
+What’s the difference between symmetric and asymmetric encryption?
+
+What is hashing and how is it different from encryption?
+
+What is salting in password storage?
+
+2. Web Security
+Explain SQL Injection. How would you prevent it?
+
+What’s an XSS (Cross-Site Scripting) attack, and how do you mitigate it?
+
+What’s CSRF (Cross-Site Request Forgery), and how do you prevent it?
+
+What’s the difference between HTTP and HTTPS?
+
+What’s an HTTP header you can set to improve security (e.g., Content-Security-Policy)?
+
+How does same-origin policy work in browsers?
+
+3. Application Security
+How do you securely store user passwords?
+
+What is input validation and why is it important?
+
+What’s secure coding? Give an example.
+
+What’s the difference between static and dynamic application security testing (SAST vs. DAST)?
+
+What is penetration testing?
+
+4. Network & API Security
+What’s the difference between TLS and SSL?
+
+How do you secure a REST API?
+
+What are JWTs and how do they work?
+
+What’s an OAuth 2.0 flow?
+
+What’s a man-in-the-middle attack and how do you prevent it?
+
+5. Advanced Topics
+How does public key infrastructure (PKI) work?
+
+What’s zero trust architecture?
+
+What’s the difference between IDS and IPS?
+
+What are side-channel attacks?
+
+How would you secure a microservices architecture?
+
+6. Practical/Scenario-Based
+A user reports their account was hacked. What steps do you take?
+
+You find a critical vulnerability in production — how do you handle it?
+
+Your app is under DDoS attack — what’s your mitigation plan?
+
+A developer wants to store encryption keys in the source code. What do you say?
+
+Your API is getting brute-force login attempts — what measures can you take?

@@ -1,0 +1,92 @@
+1. Core IT Skills (Still Essential)
+Even in an AI era, you can’t skip the fundamentals:
+
+Networking
+
+TCP/IP, DNS, DHCP, HTTP/HTTPS
+
+Firewalls, VPN, load balancers
+
+Operating Systems
+
+Windows Server & Active Directory
+
+Linux administration (shell, permissions, security)
+
+Databases
+
+SQL (MySQL, PostgreSQL)
+
+Basic NoSQL (MongoDB, Redis)
+
+Cloud Platforms
+
+AWS, Azure, or Google Cloud basics
+
+VM setup, storage, security groups
+
+Scripting & Automation
+
+Bash/PowerShell for sysadmin automation
+
+Python for cross-platform tasks
+
+2. AI-Related Knowledge for IT
+AI is becoming a core tool in IT workflows — you don’t need to be a data scientist, but you do need to know how to work with AI-powered systems.
+
+AI concepts:
+
+Machine learning vs. deep learning
+
+NLP, computer vision basics
+
+AI model lifecycle (training, deployment, monitoring)
+
+AI tools in IT:
+
+AI-assisted monitoring (e.g., Splunk with AI)
+
+ChatOps & AI-driven incident response
+
+AI in cybersecurity (threat detection, anomaly spotting)
+
+APIs & integration:
+
+How to use AI APIs (OpenAI, Hugging Face, Azure AI)
+
+Building AI-powered chatbots for support
+
+3. Automation & DevOps
+AI thrives in automated, scalable environments — IT teams now blend sysadmin work with DevOps skills:
+
+Infrastructure as Code (Terraform, Ansible)
+
+CI/CD pipelines (Jenkins, GitHub Actions, GitLab CI)
+
+Containerization (Docker, Kubernetes)
+
+Monitoring & logging (Prometheus, Grafana, ELK Stack with AI anomaly detection)
+
+4. Cybersecurity in the AI Era
+AI brings new security risks — IT pros need hybrid knowledge:
+
+Security fundamentals (CIA triad, encryption, authentication)
+
+AI-specific security:
+
+Model poisoning & prompt injection risks
+
+Protecting AI APIs
+
+Modern defense tools:
+
+AI-powered SIEMs (e.g., Sentinel, Splunk AI)
+
+Threat hunting with machine learning
+
+5. Soft Skills & Adaptability
+Prompt engineering — knowing how to query AI effectively for IT tasks
+
+Critical thinking — AI can be wrong, you need to validate
+
+Collaboration — bridging AI engineers, sysadmins, and business teams

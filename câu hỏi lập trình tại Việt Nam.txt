@@ -1,0 +1,53 @@
+1. Câu hỏi phỏng vấn chung (General)
+Bạn có thể giới thiệu bản thân và kinh nghiệm làm việc trong IT không?
+
+Vì sao bạn chọn ngành CNTT?
+
+Bạn thường làm gì để cập nhật kiến thức công nghệ mới?
+
+Bạn đã từng gặp lỗi nghiêm trọng nào trong dự án? Bạn xử lý thế nào?
+
+Bạn thích làm việc nhóm hay độc lập hơn?
+
+2. Câu hỏi về lập trình
+Sự khác nhau giữa biến cục bộ và biến toàn cục?
+
+Giải thích nguyên lý OOP (Lập trình hướng đối tượng) và 4 tính chất của nó.
+
+Big-O notation là gì?
+
+Sự khác nhau giữa Array và Linked List?
+
+Bạn đã từng dùng các cấu trúc dữ liệu nào để tối ưu hiệu suất?
+
+3. Câu hỏi về cơ sở dữ liệu
+SQL và NoSQL khác nhau thế nào?
+
+INNER JOIN, LEFT JOIN, RIGHT JOIN khác nhau ra sao?
+
+Khóa chính (Primary Key) và khóa ngoại (Foreign Key) là gì?
+
+Làm sao để tối ưu câu truy vấn SQL chậm?
+
+4. Câu hỏi về mạng máy tính
+HTTP và HTTPS khác nhau ở điểm nào?
+
+IP tĩnh và IP động khác nhau ra sao?
+
+DNS là gì và hoạt động thế nào?
+
+Mô hình OSI gồm những tầng nào?
+
+5. Câu hỏi về bảo mật
+Các biện pháp bảo mật cơ bản cho ứng dụng web?
+
+XSS và SQL Injection là gì?
+
+Tại sao phải mã hóa mật khẩu trước khi lưu vào CSDL?
+
+6. Câu hỏi tình huống
+Nếu website bị quá tải, bạn sẽ làm gì?
+
+Khi hệ thống bị hack, bạn sẽ xử lý thế nào trong 24 giờ đầu?
+
+Nếu một thành viên trong nhóm không hoàn thành nhiệm vụ, bạn sẽ xử lý ra sao?
