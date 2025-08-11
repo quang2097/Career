@@ -1,0 +1,97 @@
+Here’s a solid list of common IT interview questions broken down into categories so you can prep systematically.
+
+1. Technical Knowledge
+These assess your grasp of IT fundamentals, tools, and concepts.
+
+What’s the difference between TCP and UDP?
+
+Explain the OSI model and its layers.
+
+What is DNS, and how does it work?
+
+How does DHCP assign IP addresses?
+
+What is the difference between IPv4 and IPv6?
+
+Explain firewalls and their types (hardware/software, stateless/stateful).
+
+What’s the difference between symmetric and asymmetric encryption?
+
+How do you troubleshoot a slow network connection?
+
+Explain virtualization vs. containerization.
+
+What is RAID, and what are the common RAID levels?
+
+What are REST APIs and how do they work?
+
+Explain the difference between authentication and authorization.
+
+What’s the difference between threads and processes?
+
+2. Troubleshooting & Problem-Solving
+These are often scenario-based.
+
+A user can’t connect to the internet. How would you troubleshoot it?
+
+A server is slow—how would you investigate the issue?
+
+You deployed code to production, but it’s throwing errors—what’s your first step?
+
+How would you handle DNS resolution failure?
+
+What’s your approach when a critical system is down?
+
+3. Software & Programming
+If the role involves development or scripting:
+
+What’s the difference between compiled and interpreted languages?
+
+How does version control (e.g., Git) work?
+
+How would you optimize a slow SQL query?
+
+Explain Big O notation in simple terms.
+
+How do you debug code efficiently?
+
+What’s the difference between relational and NoSQL databases?
+
+4. Behavioral Questions
+Companies want to see teamwork, adaptability, and communication skills.
+
+Tell me about a time you solved a difficult technical problem.
+
+How do you stay updated with new technology?
+
+Describe a time when you had to explain a technical issue to a non-technical person.
+
+Tell me about a time you worked under pressure.
+
+How do you prioritize tasks when everything is urgent?
+
+5. Security Awareness
+Security is a big focus for IT roles.
+
+What is phishing, and how can it be prevented?
+
+How would you secure a Linux server?
+
+What’s the principle of least privilege?
+
+How do you handle sensitive customer data?
+
+What is multi-factor authentication, and why is it important?
+
+6. Cloud & DevOps
+Common for modern IT environments.
+
+Explain the difference between IaaS, PaaS, and SaaS.
+
+What’s the difference between public, private, and hybrid cloud?
+
+How do you automate deployments?
+
+What is CI/CD and why is it important?
+
+How would you set up monitoring for cloud infrastructure?
