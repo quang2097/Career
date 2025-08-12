@@ -1,0 +1,60 @@
+0–30 ngày: Làm quen & Hấp thụ
+🎯 Mục tiêu: Hiểu môi trường làm việc, quy trình, công cụ và sản phẩm của công ty.
+
+ Cài đặt & làm quen công cụ (IDE, Git, CI/CD, Jira/Trello, Slack, v.v.)
+
+ Đọc tài liệu dự án — hiểu mục tiêu, kiến trúc, công nghệ sử dụng.
+
+ Tìm mentor / người hướng dẫn và hỏi rõ kênh liên lạc khi gặp vấn đề.
+
+ Nắm quy trình làm việc (Scrum, Kanban, Waterfall…).
+
+ Đọc code hiện có để hiểu coding style và cách tổ chức dự án.
+
+ Fix bug nhỏ hoặc task đơn giản để làm quen codebase.
+
+ Ghi lại note kỹ thuật khi học được thứ mới.
+
+31–60 ngày: Đóng góp & Nâng tốc
+🎯 Mục tiêu: Bắt đầu xử lý task độc lập và hiểu rõ hơn về hệ thống.
+
+ Nhận task phức tạp hơn (có nhiều file liên quan, logic hơn).
+
+ Viết unit test / integration test cho phần mình làm.
+
+ Tự debug trước khi hỏi — cố gắng tái hiện lỗi, dùng log, breakpoints.
+
+ Tham gia code review — vừa nhận feedback, vừa học từ code của người khác.
+
+ Giao tiếp tiến độ rõ ràng (nếu trễ deadline, báo sớm).
+
+ Học thêm kỹ năng ngoài công việc chính (ví dụ: SQL nếu làm web backend).
+
+ Tìm hiểu kiến trúc hệ thống (database schema, API flow).
+
+61–90 ngày: Tạo giá trị rõ ràng
+🎯 Mục tiêu: Làm việc độc lập hơn, tạo ấn tượng về thái độ & năng lực.
+
+ Xử lý một module hoặc feature từ A–Z (từ phân tích đến deploy).
+
+ Đề xuất cải tiến nhỏ (code, quy trình, tài liệu).
+
+ Tự viết tài liệu cho phần mình làm để người sau dễ tiếp nhận.
+
+ Tham gia họp kỹ thuật và đóng góp ý kiến.
+
+ Học 1 công nghệ liên quan nhưng chưa rành (ví dụ: Docker, CI/CD, caching…).
+
+ Giúp đỡ đồng nghiệp mới hơn (nếu có).
+
+ Đánh giá lại mục tiêu nghề nghiệp và định hướng học tiếp.
+
+💡 Tip sống sót & phát triển nhanh:
+
+Đặt câu hỏi có nghiên cứu trước.
+
+Luôn kiểm tra code trước khi commit.
+
+Ghi lại lỗi bạn từng gặp và cách xử lý.
+
+Đừng chỉ “làm việc” — hãy học cách làm việc hiệu quả.

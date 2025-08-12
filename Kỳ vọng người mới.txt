@@ -1,0 +1,41 @@
+1. Kỳ vọng từ phía công ty / nhà tuyển dụng
+Kiến thức nền tảng vững
+Không cần phải biết mọi công nghệ mới nhất, nhưng cần hiểu chắc về nguyên lý cơ bản: cấu trúc dữ liệu, thuật toán, cơ sở dữ liệu, hệ điều hành, mạng máy tính.
+
+Sẵn sàng học hỏi và thích nghi
+Các công ty biết bạn chưa có nhiều kinh nghiệm thực tế, nhưng họ mong bạn nhanh chóng học công cụ, quy trình, và công nghệ họ đang dùng.
+
+Kỹ năng làm việc nhóm
+Có thể giao tiếp rõ ràng với đồng nghiệp, tiếp nhận feedback và hợp tác để hoàn thành dự án.
+
+Thái độ chủ động
+Tự tìm cách giải quyết vấn đề trước khi hỏi, nhưng cũng không ngại đặt câu hỏi khi cần.
+
+Kỷ luật và trách nhiệm
+Giao việc đúng deadline, báo cáo tiến độ rõ ràng.
+
+2. Kỳ vọng từ phía bản thân bạn
+Chấp nhận giai đoạn “học nghề”
+6–12 tháng đầu sẽ ít “làm cái gì vĩ đại” hơn, mà nhiều thời gian sẽ là đọc code, fix bug nhỏ, và học quy trình làm việc.
+
+Nâng kỹ năng thực chiến
+Dù học ở trường giỏi đến đâu, thực tế sẽ khác. Bạn sẽ gặp deadline gấp, khách hàng đổi yêu cầu, code của người khác khó đọc… và bạn sẽ học cách xoay xở.
+
+Tự xây dựng năng lực cốt lõi
+Xác định bạn muốn chuyên sâu vào mảng nào (web, mobile, data, AI, DevOps, bảo mật…) và từ từ nâng chuyên môn.
+
+Tạo thói quen học suốt đời
+Công nghệ thay đổi nhanh, 3–5 năm là đã có công cụ mới, framework mới. Bạn cần học liên tục.
+
+Xây dựng network
+Giao lưu với đồng nghiệp, cộng đồng lập trình, nhóm open source… sẽ mở ra cơ hội nghề nghiệp.
+
+3. Những điều không nên kỳ vọng quá sớm
+Không nên mong lương quá cao ngay từ đầu
+Trừ khi bạn đã có thành tích nổi bật (dự án lớn, giải thưởng, kinh nghiệm thực tập mạnh), mức lương thường chỉ ở mức khởi điểm.
+
+Không nên kỳ vọng làm công nghệ “xịn” ngay lập tức
+Nhiều dự án ban đầu là bảo trì, nâng cấp, hoặc xử lý bug — nhưng đây là cơ hội tốt để hiểu hệ thống.
+
+Không nên mong được “cầm trịch” dự án sớm
+Quyền chủ động và quyết định sẽ tăng dần theo năng lực và uy tín bạn tạo ra.
