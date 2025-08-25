@@ -1,0 +1,85 @@
+những cấu trúc dữ liệu phổ thông nhất trong cpp là:
+- vector
+- list
+- stack
+- queue
+- deque
+- set
+- map
+* VECTOR:
+đặc điểm:
+TỐT
+tốc độ random access nhanh O(1)
+tiết kiệm bộ nhớ
+tiết kiệm cache
+xóa nhanh ở đầu và cuối vector
+XẤU
+sửa và xóa gây bất ổn
+đưa bộ nhớ vào giữa chậm
+cần chỉnh sửa toàn bộ vector nếu muốn sửa hoặc xóa phần tử trong vector
+khả năng có hạn dựa vào số bộ nhớ sẵn có nếu không dùng reserve()
+* LIST:
+đặc điểm:
+TỐT
+xóa nhanh ở bất cứ đâu trong list
+không cần sửa toàn bộ lists nếu cần sửa và xóa bên trong list
+sửa và xóa ổn định
+kích cỡ linh hoạt
+XẤU
+tốc độ random access chậm
+cache chậm
+cần nhiều bộ nhớ hơn so với vector do cần lưu giá trị và pointer
+STACK:
+đặc điểm:
+TỐT
+bộ nhớ được tự động quản lý
+allocation rất nhanh O(1)
+cache nhanh
+XẤU
+kích cỡ giới hạn
+kích cỡ cố định
+chỉ tôn tại và sử dụng trong 1 function
+QUEUE:
+đặc điểm:
+TỐT
+cấu trúc đơn giản
+mô phỏng hoàn hảo cấu trúc FIFO
+tùy trường hợp có thể thay thế stack hoặc list
+XẤU
+chỉ có thể tương tác với đầu hoặc cuối queue
+tùy thuộc vào cấu trúc dữ liệu được sử dụng hđể tạo queue
+DEQUE:
+đặc điểm:
+TỐT
+đưa vào và xóa nhanh ở 2 đầu O(1)
+random access nhanh O(1)
+không cần chỉnh sửa cả deque nếu cần thêm ít hoặc vừa phần tử
+XẤU
+cần nhiều bộ nhớ hơn vector
+sửa xóa ở giữa chậm O(n)
+cache chậm
+sửa và xóa gây bất ổn
+MAP:
+đặc điểm:
+TỐT
+map được sắp xếp theo những giá trị key được sort sẵn
+tương đối nhanh và ổn định do tất cả quá trình đều chắc chắn là O(log(n))
+thêm và xóa ổn định
+XẤU
+tốc độ tìm chậm hơn của unordered_map (hash map): O(log(n)) so với O(1)
+cần nhiều bộ nhớ hơn unordered_map
+không có random access
+cache chậm
+BỔ SUNG:
+UNORDERED_MAP
+đặc điểm:
+TỐT
+tìm, thêm, sửa, xóa rất nhanh
+rất hiệu quả đối với cơ sở dữ liệu cỡ lớn
+hiệu quả bộ nhớ rất tốt
+XẤU
+key không được sort trước như map
+trường hợp tệ nhất là O(n) so với O(log(n)) của map
+dựa vào function hash tốt
+có thể gây bất ổn
+tìm lỗi phức tạp
