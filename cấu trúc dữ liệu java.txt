@@ -1,0 +1,141 @@
+ARRAY
+ĐẶC ĐIỂM
+điểm tốt
+Hiệu suất cao: Mảng trong Java có hiệu suất rất cao. Các phần tử được lưu trữ liên tiếp nhau trong bộ nhớ, cho phép truy cập ngẫu nhiên đến bất kỳ phần tử nào bằng chỉ số với độ phức tạp thời gian O(1).
+
+Tiết kiệm bộ nhớ: Vì tất cả các phần tử đều có cùng một kiểu dữ liệu.
+
+Có thể chứa các đối tượng: Mảng trong Java không chỉ giới hạn ở các kiểu dữ liệu nguyên thủy (như int, char, boolean) mà còn có thể lưu trữ các đối tượng, giúp bạn tạo ra các cấu trúc phức tạp hơn.
+
+điểm xấu
+Kích thước cố định: Nếu muốn thay đổi kích thước, bạn phải tạo một mảng mới và sao chép tất cả các phần tử từ mảng cũ sang.
+
+Có thể bị tràn bộ đệm: Nếu bạn cố gắng truy cập một chỉ số nằm ngoài phạm vi của mảng.
+
+Khó chèn và xóa: Việc chèn một phần tử vào giữa mảng hoặc xóa một phần tử đòi hỏi phải di chuyển tất cả các phần tử còn lại, có độ phức tạp thời gian là O(n).
+
+ARRAY LIST
+ĐẶC ĐIỂM
+điểm tốt
+Kích thước linh hoạt: ArrayList có thể tự động tăng hoặc giảm kích thước để chứa số lượng phần tử cần thiết. Khi mảng đầy, nó sẽ tự động tạo một mảng mới lớn hơn và sao chép các phần tử hiện tại.
+
+Truy cập ngẫu nhiên nhanh: ArrayList cho phép truy cập ngẫu nhiên đến bất kỳ phần tử nào bằng chỉ số với độ phức tạp thời gian O(1).
+
+Có thể chứa các đối tượng: ArrayList có thể lưu trữ các đối tượng, giúp bạn tạo ra các danh sách đa dạng và phức tạp.
+
+Nhiều phương thức tiện lợi: ArrayList cung cấp nhiều phương thức hữu ích như add(), remove(), get(), set().
+
+điểm xấu
+Tốn kém khi chèn/xóa ở giữa: Khi bạn thêm hoặc xóa một phần tử ở giữa ArrayList, tất cả các phần tử phía sau phải được dịch chuyển. Thao tác này có độ phức tạp thời gian là O(n).
+
+Quá trình thay đổi kích thước tốn kém: Mặc dù việc thay đổi kích thước là tự động, nhưng nó đòi hỏi một quá trình tốn kém: tạo một mảng mới lớn hơn và sao chép tất cả các phần tử cũ sang.
+
+Không hỗ trợ các kiểu dữ liệu nguyên thủy: ArrayList chỉ lưu trữ các đối tượng. Để lưu trữ các kiểu dữ liệu nguyên thủy (như int, char), Java sẽ tự động chuyển chúng sang các lớp "wrapper" tương ứng (Integer, Character). Quá trình này có thể tốn thêm bộ nhớ và làm chậm hiệu suất.
+
+HASHSET
+ĐẶC ĐIỂM
+điểm tốt
+Tốc độ cao: Ưu điểm lớn nhất của HashSet là hiệu suất tìm kiếm, thêm, và xóa phần tử cực kỳ nhanh. Các thao tác này có độ phức tạp thời gian trung bình là O(1).
+
+Không cho phép phần tử trùng lặp: HashSet tự động đảm bảo rằng mỗi phần tử trong tập hợp là duy nhất.
+
+Có thể chứa phần tử null: HashSet cho phép bạn thêm một giá trị null duy nhất.
+
+Được triển khai dựa trên HashMap: HashSet được xây dựng bằng cách sử dụng HashMap. Mỗi phần tử trong HashSet được lưu trữ như một khóa của HashMap, với một giá trị dummy (giả) liên kết.
+
+điểm xấu
+Không có thứ tự: Các phần tử trong HashSet không được sắp xếp theo một thứ tự cụ thể nào. Nếu bạn cần duy trì thứ tự chèn, bạn nên sử dụng LinkedHashSet.
+
+Hiệu suất có thể giảm: Mặc dù hiệu suất trung bình là O(1), hiệu suất thực tế có thể giảm nếu có nhiều xung đột băm (hash collisions). Xung đột xảy ra khi hai phần tử khác nhau tạo ra cùng một giá trị băm. Khi đó, HashSet phải sử dụng các cơ chế để giải quyết xung đột làm chậm quá trình tìm kiếm.
+
+Tiêu tốn bộ nhớ: Để duy trì hiệu suất cao, HashSet cần một không gian bộ nhớ lớn hơn so với các cấu trúc dữ liệu khác như ArrayList để chứa bảng băm và giải quyết xung đột.
+
+Không thể truy cập bằng chỉ số: Vì không có thứ tự, bạn không thể truy cập các phần tử trong HashSet bằng chỉ số (index), không có phương thức get(index) như trong ArrayList.
+
+HASHMAP
+ĐẶC ĐIỂM
+điểm tốt
+Truy cập nhanh chóng: Ưu điểm lớn nhất của HashMap là tốc độ truy cập, thêm, và xóa các phần tử cực kỳ nhanh. Các thao tác này có độ phức tạp thời gian trung bình là O(1).
+
+Không cho phép khóa trùng lặp: HashMap đảm bảo rằng mỗi khóa (key) trong bản đồ là duy nhất. Nếu bạn cố gắng thêm một cặp khóa-giá trị mới với một khóa đã tồn tại, giá trị cũ sẽ được ghi đè.
+
+Có thể chứa một khóa null và nhiều giá trị null: HashMap cho phép lưu trữ một khóa null duy nhất và nhiều giá trị null.
+
+điểm xấu
+Không có thứ tự: Các cặp khóa-giá trị trong HashMap không được sắp xếp theo bất kỳ thứ tự nào. Điều này có nghĩa là thứ tự của các phần tử khi bạn duyệt qua chúng không thể đảm bảo và có thể thay đổi. Nếu bạn cần duy trì thứ tự chèn, bạn nên sử dụng LinkedHashMap. Nếu bạn cần sắp xếp theo thứ tự khóa, hãy dùng TreeMap.
+
+Hiệu suất có thể giảm: Mặc dù hiệu suất trung bình là O(1), hiệu suất thực tế có thể giảm nếu có nhiều xung đột băm (hash collisions). Xung đột xảy ra khi hai khóa khác nhau tạo ra cùng một giá trị băm. Khi đó, HashMap phải sử dụng các cơ chế để giải quyết xung đột làm chậm quá trình tìm kiếm.
+
+Tiêu tốn bộ nhớ: Để duy trì hiệu suất cao, HashMap cần một không gian bộ nhớ lớn hơn so với một số cấu trúc dữ liệu khác, vì nó phải duy trì một bảng băm có dung lượng đủ lớn để giải quyết xung đột một cách hiệu quả.
+
+SET
+ĐẶC ĐIỂM
+điểm tốt
+Không có phần tử trùng lặp: Đây là đặc điểm nổi bật nhất của Set. Nó tự động đảm bảo rằng mọi phần tử trong tập hợp đều là duy nhất, giúp tránh lỗi và đơn giản hóa code.
+
+Hiệu suất tìm kiếm cao: Các lớp triển khai Set như HashSet sử dụng cấu trúc dữ liệu bảng băm, giúp các thao tác tìm kiếm, thêm và xóa phần tử có độ phức tạp thời gian trung bình là O(1).
+
+Được thiết kế cho các phép toán tập hợp: Set rất phù hợp cho các phép toán như hợp (union), giao (intersection), và hiệu (difference), giúp giải quyết các bài toán liên quan đến tập hợp một cách hiệu quả.
+
+điểm xấu
+Không có thứ tự: Đây là nhược điểm chính của Set. Các phần tử không được lưu trữ theo bất kỳ thứ tự nào. Bạn không thể truy cập các phần tử bằng chỉ số (index) và thứ tự của các phần tử khi lặp lại có thể không thể đoán trước.  Nếu bạn cần duy trì thứ tự chèn, hãy sử dụng LinkedHashSet. Nếu cần sắp xếp các phần tử, hãy dùng TreeSet.
+
+Không thể truy cập bằng chỉ số: Vì không có thứ tự, Set không có phương thức get() để truy cập một phần tử tại một chỉ số cụ thể. Bạn phải lặp qua toàn bộ tập hợp để tìm một phần tử.
+
+Hiệu suất có thể giảm: Tương tự như HashSet, nếu có nhiều xung đột băm, hiệu suất của Set có thể bị ảnh hưởng.
+
+Tiêu tốn bộ nhớ: Set (đặc biệt là HashSet) có thể tốn nhiều bộ nhớ hơn so với một số cấu trúc dữ liệu khác do cần duy trì một bảng băm để hoạt động hiệu quả.
+
+TREESET
+ĐẶC ĐIỂM
+điểm tốt
+Sắp xếp tự động: Ưu điểm nổi bật nhất của TreeSet là nó tự động sắp xếp các phần tử theo thứ tự tự nhiên (natural order) hoặc theo một Comparator tùy chỉnh.
+
+Tốc độ tìm kiếm, thêm, xóa ổn định: Các thao tác thêm (add), xóa (remove), và kiểm tra sự tồn tại (contains) trong TreeSet có độ phức tạp thời gian là O(log n). Mặc dù chậm hơn một chút so với HashSet (O(1)), hiệu suất này vẫn rất ổn định và nhanh, đặc biệt là với các tập dữ liệu lớn.
+
+Hỗ trợ các phép toán tập hợp hiệu quả: TreeSet hỗ trợ các thao tác như tìm phần tử lớn nhất/nhỏ nhất, các phần tử trong một khoảng giá trị nhất định (range), và các phép toán tập hợp khác một cách hiệu quả.
+
+điểm xấu
+Hiệu suất chậm hơn HashSet: Do việc phải duy trì thứ tự sắp xếp của cây, các thao tác cơ bản của TreeSet (thêm, xóa, tìm kiếm) có độ phức tạp thời gian là O(log n), trong khi HashSet là O(1). Sự khác biệt này có thể đáng kể với các tập dữ liệu lớn.
+
+Tốn bộ nhớ: Mỗi nút trong cây của TreeSet phải lưu trữ thêm thông tin về cây (ví dụ: các con trỏ đến nút cha, con trái, con phải và màu của nút), khiến nó tốn nhiều bộ nhớ hơn so với HashSet.
+
+Không thể lưu trữ phần tử null: TreeSet không cho phép bạn lưu trữ phần tử null vì nó cần so sánh các phần tử với nhau để duy trì thứ tự.
+
+Phần tử phải so sánh được: Các đối tượng được lưu trữ trong TreeSet phải có thể so sánh được (phải triển khai giao diện Comparable hoặc bạn phải cung cấp một Comparator tùy chỉnh). Nếu không, chương trình sẽ ném ra lỗi.
+
+MAP
+ĐẶC ĐIỂM
+điểm tốt
+Lưu trữ dữ liệu có quan hệ: Map lý tưởng cho việc lưu trữ dữ liệu mà bạn có thể truy cập bằng một khóa duy nhất, thay vì một chỉ số (index). Điều này rất hữu ích khi dữ liệu có một mối quan hệ logic giữa khóa và giá trị (ví dụ: tên sinh viên và điểm số của họ).
+
+Truy cập nhanh chóng: Các lớp triển khai Map như HashMap cung cấp hiệu suất truy cập, thêm và xóa cực kỳ nhanh chóng, với độ phức tạp thời gian trung bình là O(1).
+
+Không có khóa trùng lặp: Map đảm bảo rằng mỗi khóa là duy nhất, giúp bạn tránh việc ghi đè dữ liệu một cách vô ý.
+
+điểm xấu
+Không có thứ tự: Các lớp triển khai Map như HashMap không duy trì thứ tự của các cặp khóa-giá trị. Thứ tự của các phần tử khi bạn duyệt qua chúng không thể đảm bảo và có thể thay đổi.
+
+Tốn bộ nhớ: Map (đặc biệt là HashMap) cần một không gian bộ nhớ lớn hơn so với các cấu trúc dữ liệu khác như ArrayList, vì nó phải duy trì một bảng băm để hoạt động hiệu quả.
+
+Không thể truy cập bằng chỉ số: Bạn không thể truy cập các phần tử trong Map bằng chỉ số (index) vì chúng không có thứ tự. Bạn phải sử dụng khóa để truy xuất giá trị tương ứng.
+
+Hiệu suất có thể giảm: Mặc dù hiệu suất trung bình là O(1), hiệu suất thực tế của HashMap có thể giảm nếu có nhiều xung đột băm.
+
+TREEMAP
+ĐẶC ĐIỂM
+điểm tốt
+Sắp xếp tự động theo khóa: Ưu điểm nổi bật nhất của TreeMap là nó tự động sắp xếp các cặp khóa-giá trị theo thứ tự tự nhiên của khóa hoặc theo một Comparator tùy chỉnh. Điều này rất hữu ích khi bạn cần một Map có các khóa được sắp xếp.
+
+Tốc độ ổn định: Các thao tác thêm (put), xóa (remove), và tìm kiếm (get) trong TreeMap có độ phức tạp thời gian là O(log n). Mặc dù chậm hơn so với HashMap (O(1)), hiệu suất này rất ổn định và nhanh, đặc biệt là với các tập dữ liệu lớn.
+
+Hỗ trợ các phép toán trên phạm vi: TreeMap cung cấp các phương thức để tìm phần tử lớn nhất/nhỏ nhất, các phần tử trong một khoảng giá trị cụ thể, và các khóa lớn hơn hoặc nhỏ hơn một giá trị cho trước.
+
+điểm xấu
+Hiệu suất chậm hơn HashMap: Do việc phải duy trì thứ tự sắp xếp của cây, các thao tác cơ bản của TreeMap chậm hơn HashMap. Với các ứng dụng không yêu cầu thứ tự, HashMap sẽ là lựa chọn tốt hơn.
+
+Tốn bộ nhớ: Mỗi nút trong cây của TreeMap phải lưu trữ thêm thông tin về cây, khiến nó tốn nhiều bộ nhớ hơn so với HashMap.
+
+Không thể lưu trữ khóa null: Kể từ Java 7, TreeMap không cho phép bạn lưu trữ khóa null vì nó cần so sánh các khóa với nhau để duy trì thứ tự.
+
+Khóa phải so sánh được: Các khóa được sử dụng trong TreeMap phải có thể so sánh được (phải triển khai giao diện Comparable hoặc bạn phải cung cấp một Comparator tùy chỉnh). Nếu không, chương trình sẽ ném ra lỗi.

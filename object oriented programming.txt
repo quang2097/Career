@@ -1,0 +1,10 @@
+Key Concepts of OOP
+OOP is built on four core principles, often called the "four pillars":
+
+Encapsulation: This is the practice of bundling data (attributes) and the methods (behaviors) that operate on that data into a single unit, the object. It hides the internal workings of an object from the outside, preventing unauthorized access and ensuring data integrity. A good analogy is a car's engine. You don't need to know how the engine works internally to drive the car; you only need to use the public interface, like the steering wheel and pedals.
+
+Abstraction: Abstraction focuses on providing only the essential information and functionality to the user while hiding the complex, underlying details. It simplifies the design of a system by allowing you to work with a high-level representation of an object. For example, when you use a "print" function, you don't need to know the intricate machine code that makes the printer work; you just need to know how to call the function.
+
+Inheritance: This principle allows a new class (a "child" or "subclass") to inherit properties and behaviors from an existing class (a "parent" or "superclass"). This promotes code reusability and helps create a logical hierarchy. For instance, a "Car" class might inherit from a "Vehicle" class, automatically getting attributes like speed and color, but also having its own unique attributes, like number_of_doors.
+
+Polymorphism: Meaning "many forms," polymorphism allows objects of different classes to be treated as objects of a common superclass. This means you can use a single interface to represent multiple different data types. For example, a draw() method could be called on different "Shape" objects (like a circle, square, or triangle), and each object would know how to draw itself in its own way.

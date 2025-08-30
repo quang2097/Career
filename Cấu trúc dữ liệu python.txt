@@ -1,0 +1,110 @@
+LIST
+ĐẶC ĐIỂM
+điểm tốt
+Tính linh hoạt: List có thể lưu trữ các phần tử thuộc nhiều kiểu dữ liệu khác nhau (integer, string, float, v.v.). Điều này làm cho chúng rất linh hoạt và hữu ích trong nhiều trường hợp.
+
+Có thể thay đổi (Mutable): có thể dễ dàng thêm, xóa, hoặc sửa đổi các phần tử trong list sau khi nó đã được tạo. Điều này rất tiện lợi khi  cần thay đổi dữ liệu một cách thường xuyên.
+
+Có thứ tự: Các phần tử trong list được sắp xếp theo một thứ tự nhất định và có thể được truy cập bằng chỉ số (index). Điều này giúp việc truy cập và thao tác với dữ liệu trở nên dễ dàng và nhanh chóng.
+
+Dễ sử dụng: List có cú pháp đơn giản và nhiều phương thức (method) được tích hợp sẵn, giúp việc thao tác trở nên trực quan và dễ học cho người mới bắt đầu.
+
+Khả năng lồng nhau: List có thể chứa các list khác, tạo ra các cấu trúc dữ liệu phức tạp hơn như ma trận.
+
+điểm xấu
+Tốn bộ nhớ: Do list có thể chứa các kiểu dữ liệu khác nhau, mỗi phần tử cần lưu trữ thêm thông tin về kiểu dữ liệu của nó. Điều này làm cho list tiêu tốn nhiều bộ nhớ hơn so với các cấu trúc dữ liệu khác như mảng (array) trong các ngôn ngữ lập trình khác.
+
+Chậm hơn với dữ liệu lớn: Việc chèn hoặc xóa các phần tử ở giữa list có thể tốn kém về hiệu suất, vì Python cần phải di chuyển các phần tử còn lại để duy trì thứ tự. Với các tập dữ liệu lớn, điều này có thể làm giảm tốc độ xử lý.
+
+Không được tối ưu cho các phép tính toán học: List không được tối ưu cho các phép tính toán học chuyên sâu. Khi làm việc với các phép toán ma trận hoặc đại số tuyến tính, việc sử dụng các thư viện chuyên biệt như NumPy với các kiểu dữ liệu mảng (array) sẽ hiệu quả hơn nhiều.
+
+Không đồng nhất về kiểu dữ liệu: Mặc dù tính linh hoạt của việc lưu trữ các kiểu dữ liệu khác nhau là một ưu điểm, nhưng đôi khi nó cũng có thể gây ra lỗi nếu bạn không cẩn thận khi xử lý các phần tử trong list. Ví dụ, việc thực hiện một phép toán số học trên một chuỗi sẽ gây ra lỗi.
+
+STACK
+ĐẶC ĐIỂM
+điểm tốt
+Dễ sử dụng: Vì list là một cấu trúc dữ liệu cơ bản và phổ biến trong Python, việc sử dụng nó để tạo stack rất đơn giản và dễ hiểu, không cần phải nhập thêm thư viện nào.
+
+Thao tác nhanh: Các thao tác thêm (append()) và xóa (pop()) ở cuối list diễn ra rất nhanh, với độ phức tạp thời gian là O(1) (thời gian không đổi). Điều này khiến list trở thành một lựa chọn hiệu quả cho các ứng dụng stack cơ bản.
+
+Tính linh hoạt: Bạn có thể lưu trữ bất kỳ loại dữ liệu nào trong stack (integer, string, object, v.v.), vì list là một cấu trúc dữ liệu đa năng.
+
+điểm xấu
+Không phải là stack thực sự: List không được thiết kế riêng cho mục đích của stack. Mặc dù các thao tác append() và pop() ở cuối list rất hiệu quả, nhưng các thao tác ở giữa list (ví dụ: insert(0, element)) lại rất tốn kém về mặt hiệu suất.
+
+Tốn bộ nhớ: So với các cấu trúc dữ liệu tối ưu hơn, việc sử dụng list có thể tốn nhiều bộ nhớ hơn.
+
+Có thể bị lạm dụng: Nếu bạn hoặc một lập trình viên khác không hiểu rõ nguyên lý của stack và lại sử dụng các thao tác như chèn hoặc xóa ở đầu list (ví dụ list.pop(0)) thì hiệu suất sẽ bị giảm đáng kể, và mục đích của việc dùng stack sẽ không còn đúng nữa.
+
+------Nếu bạn cần một cấu trúc dữ liệu stack hiệu quả hơn, đặc biệt là trong các ứng dụng đa luồng hoặc cần hiệu suất cao, bạn nên sử dụng collections.deque. Deque được tối ưu hóa để thực hiện cả hai thao tác thêm và xóa ở cả hai đầu của danh sách một cách nhanh chóng (O(1))------
+
+QUEUE
+ĐẶC ĐIỂM
+điểm tốt
+Dễ sử dụng: List là một cấu trúc dữ liệu cơ bản trong Python nên rất quen thuộc và dễ dùng.
+
+Không cần import: Bạn không cần phải nhập thêm bất kỳ thư viện nào để sử dụng.
+
+điểm xấu
+Hiệu suất kém: Thao tác list.pop(0) (xóa phần tử ở đầu list) có độ phức tạp thời gian là O(n), nghĩa là thời gian thực hiện tỉ lệ thuận với số lượng phần tử. Khi bạn xóa một phần tử ở đầu, tất cả các phần tử còn lại trong list phải được dịch chuyển về phía trước, điều này rất tốn kém về mặt hiệu suất với các queue lớn.
+
+Không được thiết kế cho queue: List được tối ưu hóa cho việc thêm và xóa ở cuối, không phải ở đầu.
+------có thể được thay thế bằng deque------
+
+HASH TABLE (SET, DICT)
+ĐẶC ĐIỂM
+điểm tốt
+Truy cập nhanh chóng: Ưu điểm lớn nhất của hash table là khả năng truy cập, thêm, và xóa các phần tử với tốc độ rất nhanh, có độ phức tạp thời gian trung bình là O(1). Điều này xảy ra do mỗi khóa được ánh xạ trực tiếp tới một vị trí trong bộ nhớ thông qua hàm băm (hash function), giúp tìm kiếm dữ liệu gần như ngay lập tức.
+
+Hiệu quả cho việc tìm kiếm: Hash table là lựa chọn tối ưu khi bạn cần kiểm tra sự tồn tại của một phần tử hoặc tìm kiếm một giá trị dựa trên khóa của nó.
+
+Linh hoạt: Dictionary cho phép lưu trữ các cặp khóa-giá trị, nơi khóa phải là một đối tượng bất biến (immutable) và giá trị có thể là bất kỳ kiểu dữ liệu nào. Điều này mang lại sự linh hoạt cao.
+
+Được sử dụng rộng rãi: Do hiệu suất cao, hash table là nền tảng cho nhiều cấu trúc dữ liệu và thuật toán khác trong Python.
+
+điểm xấu
+Tốn bộ nhớ: Hash table thường tốn nhiều bộ nhớ hơn so với các cấu trúc dữ liệu khác như list, vì nó cần một không gian lớn hơn để lưu trữ các bảng băm và giải quyết xung đột (collision).
+
+Xung đột (Collision): Khi hai khóa khác nhau tạo ra cùng một giá trị băm, một xung đột xảy ra. Mặc dù Python có các cơ chế để giải quyết xung đột (như open addressing hoặc chaining), nhưng nếu số lượng xung đột lớn, hiệu suất có thể bị giảm xuống đáng kể, thậm chí về O(n) trong trường hợp xấu nhất.
+
+Không có thứ tự: Các phần tử trong hash table (dictionary) không được sắp xếp theo một thứ tự nhất định (trước phiên bản Python 3.7). Điều này có nghĩa là bạn không thể truy cập các phần tử bằng chỉ số hay duy trì một thứ tự cụ thể của dữ liệu.
+
+Khóa phải bất biến: Khóa (key) của một dictionary phải là một đối tượng bất biến (ví dụ: chuỗi, số, tuple). Bạn không thể sử dụng các đối tượng có thể thay đổi như list làm khóa, điều này có thể gây ra một số hạn chế.
+
+TUPLE
+ĐẶC ĐIỂM
+điểm tốt
+Bất biến (Immutable): Đặc điểm quan trọng nhất của tuple là không thể thay đổi sau khi tạo. Điều này có một vài lợi thế:
+
+An toàn dữ liệu: Dữ liệu trong tuple không thể bị sửa đổi, thêm hoặc xóa một cách ngẫu nhiên, giúp bảo vệ tính toàn vẹn của dữ liệu.
+
+Tốc độ nhanh: Do tính bất biến, tuple được tối ưu hóa về mặt hiệu suất. Việc tạo và truy cập các phần tử trong tuple thường nhanh hơn list một chút.
+
+Có thể dùng làm khóa dictionary: Vì tuple là bất biến, chúng có thể được sử dụng làm khóa cho các phần tử trong dictionary hoặc là một phần tử của set, điều mà list không làm được.
+
+Tiêu tốn ít bộ nhớ: So với list, tuple chiếm ít bộ nhớ hơn, giúp cải thiện hiệu suất, đặc biệt khi làm việc với các tập dữ liệu lớn.
+
+Có thể chứa nhiều kiểu dữ liệu: Giống như list, một tuple có thể chứa các phần tử thuộc nhiều kiểu dữ liệu khác nhau.
+
+điểm xấu
+Không thể thay đổi: Đây vừa là ưu điểm, vừa là nhược điểm. Việc không thể thêm, xóa, hoặc sửa đổi các phần tử khiến tuple không linh hoạt khi bạn cần một cấu trúc dữ liệu có thể thay đổi. Mọi thay đổi đều đòi hỏi việc tạo một tuple mới hoàn toàn.
+
+Ít phương thức tích hợp sẵn: Vì tuple là bất biến, nó chỉ có hai phương thức là count() (để đếm số lần xuất hiện của một phần tử) và index() (để tìm chỉ số của một phần tử). Trong khi đó, list có nhiều phương thức hơn (như append(), remove(), sort(), v.v.).
+
+Thao tác phức tạp hơn khi cần thay đổi: Nếu bạn muốn thay đổi một phần tử trong tuple, bạn phải chuyển đổi nó sang list, thực hiện thay đổi, sau đó chuyển đổi ngược lại thành tuple, điều này làm cho quá trình trở nên rườm rà và tốn kém hơn.
+
+ARRAY
+ĐẶC ĐIỂM
+điểm tốt
+Hiệu quả về bộ nhớ: Các phần tử trong một array.array đều phải cùng một kiểu dữ liệu. Điều này cho phép Python lưu trữ chúng một cách hiệu quả và gọn nhẹ hơn rất nhiều so với list, vốn phải lưu trữ thông tin kiểu dữ liệu cho từng phần tử.
+
+Tốc độ xử lý cao: Nhờ tính đồng nhất về kiểu dữ liệu và lưu trữ liền kề trong bộ nhớ, các thao tác toán học và truy cập tuần tự trên array.array thường nhanh hơn so với list.
+
+Được thiết kế cho dữ liệu số: Module array lý tưởng cho việc xử lý các tập hợp dữ liệu số lớn, chẳng hạn như số nguyên và số thực.
+
+điểm xấu
+Hạn chế về kiểu dữ liệu: Nhược điểm lớn nhất là một array.array chỉ có thể chứa các phần tử cùng một kiểu dữ liệu. Điều này làm giảm tính linh hoạt, vì bạn không thể lưu trữ các kiểu dữ liệu khác nhau (như số và chuỗi) trong cùng một mảng.
+
+Không linh hoạt khi thay đổi kích thước: Mặc dù bạn có thể thêm hoặc xóa phần tử, nhưng array.array không linh hoạt bằng list khi thay đổi kích thước. Mỗi khi mảng phải mở rộng dung lượng, nó có thể cần cấp phát lại một khối bộ nhớ lớn hơn và sao chép toàn bộ dữ liệu, gây tốn kém về hiệu suất.
+
+Ít được sử dụng hơn: Trong các ứng dụng phổ thông, list và NumPy array được sử dụng phổ biến hơn nhiều. Module array thường chỉ được dùng trong các trường hợp cần tối ưu bộ nhớ hoặc tương tác với dữ liệu nhị phân cấp thấp.
