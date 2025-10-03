@@ -5,10 +5,62 @@ These assess your grasp of IT fundamentals, tools, and concepts.
 
 What’s the difference between TCP and UDP?
 
+//
+what is TCP? :: 
+TCP stands for Transmission Control Protocol. It is one of the main protocols of the Internet Protocol (IP) suite, which is why the entire collection is often called TCP/IP
+TCP operates at the transport layer of the network model and is crucial because it provides reliable, ordered, and error-checked delivery of data between applications running on different host computers. It's the "traffic controller" that ensures data reaches its destination intact and in the correct sequence.
+
+what is UDP? ::
+UDP stands for User Datagram Protocol. It is a core communication protocol in the Internet Protocol suite, often referred to as TCP/IP.
+Unlike its counterpart, TCP (Transmission Control Protocol), UDP is a connectionless and unreliable protocol that prioritizes speed and low overhead over guaranteed delivery. It's often described as a "fire and forget" protocol.
+
+Transmission Control Protocol (TCP) and User Datagram Protocol (UDP) are transport layer protocols used for data transmission over networks. They differ significantly in their functionality, reliability, and use cases.
+
+TCP is a connection-oriented protocol, meaning it establishes a connection before data transfer and ensures reliable delivery. It uses mechanisms like sequencing, acknowledgment, and retransmission to guarantee data integrity. TCP is slower due to its reliability features but is ideal for applications requiring accuracy, such as web browsing, email, and file transfers.
+
+UDP, on the other hand, is a connectionless protocol that does not establish a connection before sending data. It is faster and lightweight but does not guarantee delivery or order of packets. UDP is suitable for real-time applications like online gaming, video streaming, and VoIP, where speed is more critical than reliability.
+
+Key Differences:
+
+Connection: TCP is connection-oriented, while UDP is connectionless.
+Reliability: TCP ensures reliable delivery with error checking and acknowledgment; UDP does not.
+Speed: TCP is slower due to its overhead; UDP is faster and efficient.
+Use Cases: TCP is used for applications like HTTP, FTP, and email. UDP is used for DNS, gaming, and streaming.
+Packet Handling: TCP sequences packets and retransmits lost ones. UDP does not handle sequencing or retransmission.
+Header Size: TCP has a larger header (20-60 bytes), while UDP has a smaller fixed header (8 bytes).
+
+In summary, TCP is ideal for scenarios requiring accuracy and reliability, while UDP is better for applications prioritizing speed and low latency. The choice between TCP and UDP depends on the specific requirements of the task.
+//
 Explain the OSI model and its layers.
 
+//
+The OSI (Open Systems Interconnection) model is a conceptual framework created by the International Organization for Standardization (ISO) that describes and standardizes the functions of a telecommunication or computing system into seven distinct layers.
+
+7	Application	Provides the interface for network services to user applications (e.g., web browsers, email clients).	Data
+6	Presentation	Handles data formatting, encryption/decryption, and compression. It ensures the receiving application can understand the data.	Data
+5	Session		Establishes, manages, and terminates the communication sessions (dialogues) between two applications.	Data
+4	Transport	Provides reliable (TCP) or unreliable (UDP) end-to-end data delivery. Segments data and handles flow and error control.	Segment / Datagram
+3	Network	Handles logical addressing (IP) and routing of packets across different networks (internetworking). Determines the best path.	Packet
+2	Data Link	Provides node-to-node data transfer within the same network segment. Handles physical addressing (MAC) and error detection.
+1	Physical	Transmits the raw bit stream over the physical medium (cables, radio waves, light). Defines electrical and mechanical specifications.	Bit
+//
 What is DNS, and how does it work?
 
+//
+The process of translating a domain name into an IP address is called DNS resolution and involves a hierarchy of four main server types working together. This process happens in milliseconds.
+
+1	Browser/Client Check: When you type a URL into your browser, your computer first checks its local cache (browser cache and OS cache) to see if it already has the IP address. If found, the process stops here.
+
+2	Recursive DNS Resolver Query: If the address is not cached locally, your computer sends the request (a recursive query) to a DNS Resolver (a server, often provided by your ISP or a public service like Google DNS). The Resolver's job is to do the legwork to find the answer.
+
+3	Root Name Server Query: The Resolver queries the Root Name Server (the top of the DNS hierarchy). The Root server doesn't know the IP address, but it knows where to find the Top-Level Domain (TLD) server for the domain's extension (e.g., for example.com, it refers the Resolver to the .com TLD server).
+
+4	TLD Name Server Query: The Resolver queries the TLD Name Server (like the one for .com or .org). The TLD server responds by referring the Resolver to the correct Authoritative Name Server for the specific domain (example.com).
+
+5	Authoritative Name Server Query: The Resolver queries the Authoritative Name Server. This is the server that actually holds the definitive DNS records (like the A record, which maps a domain name to an IPv4 address) for the specific domain. It responds with the correct IP address.
+
+6	Response and Connection: The Resolver sends the IP address back to your computer. Your computer then caches this IP address and uses it to establish a direct connection to the web server that hosts the website.
+//
 How does DHCP assign IP addresses?
 
 What is the difference between IPv4 and IPv6?
